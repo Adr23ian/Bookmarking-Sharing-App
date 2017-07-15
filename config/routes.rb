@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :bookmarks
   get "home", to: 'welcome#index'
 
   devise_for :users, controllers: { sessions: 'users/sessions', omniauth_callbacks:

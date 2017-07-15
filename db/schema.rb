@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170715181719) do
+ActiveRecord::Schema.define(version: 20170715200855) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "Bookmarks_Users", id: false, force: :cascade do |t|
+    t.bigint "Bookmark_id", null: false
+    t.bigint "User_id", null: false
+  end
+
+  create_table "bookmarks", force: :cascade do |t|
+    t.string "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "friendships_tables", force: :cascade do |t|
   end
