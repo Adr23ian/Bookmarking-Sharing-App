@@ -1,2 +1,3 @@
 class Bookmark < ApplicationRecord
+  
 end

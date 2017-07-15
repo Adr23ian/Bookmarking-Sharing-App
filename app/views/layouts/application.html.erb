@@ -25,12 +25,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">BookmarkApp</a>
+        <a class="navbar-brand" href="#">Bookmark Sharing App</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
+            <li><%= link_to "Profile", current_user %></li>
+            <li><%= link_to "Friends", users_path  %></li>
+            <li><%= link_to "\xE2\x9D\xA4", "#"  %></li>
+            <% if user_signed_in? %>
+              <li>
+              <%= link_to('Logout', users_session_path, method: :delete) %>
+             </li>
+            <% else %>
+              <li>
+              <%= link_to('Login', users_sign_in_path)  %>
+             </li>
+            <% end %>
           </ul>
         </div>
       </div>
@@ -42,7 +51,7 @@
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
-        <div class="col-lg-3">
+        <!-- <div class="col-lg-3">
           <div class="well sidebar-nav">
             <h3>Sidebar</h3>
             <ul class="nav nav-list">
@@ -56,9 +65,11 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2017</p>
+        <p>&copy; Bookmark Sharing App - Christopher Hernandez and Adrian Martinez  2017</p>
       </footer>
-
+      <% if Rails.env.development? %>
+        <%= console %>
+      <% end %>
     </div> <!-- /container -->
 
   </body>

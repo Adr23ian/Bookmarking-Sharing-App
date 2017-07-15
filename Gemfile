@@ -24,6 +24,8 @@ gem 'omniauth-facebook', '~> 4.0'
 
 gem 'twitter-bootstrap-rails', '~> 4.0'
 
+gem 'acts-as-taggable-on'
+
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

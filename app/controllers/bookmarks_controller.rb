@@ -21,6 +21,11 @@ class BookmarksController < ApplicationController
   def edit
   end
 
+  #Acts a Taggable Setup per Documentation
+  def user_params
+    params.require(:bookmark).permit(:address, :tag_list) ## Rails 4 strong params usage
+  end
+
   # POST /bookmarks
   # POST /bookmarks.json
   def create

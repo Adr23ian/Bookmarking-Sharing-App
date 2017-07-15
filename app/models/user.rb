@@ -3,6 +3,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :omniauthable, :omniauth_providers => [:facebook]
 
+  acts_as_taggable # Alias for acts_as_taggable_on :tags
+  acts_as_taggable_on :skills, :interests
+
+
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
@@ -18,11 +22,5 @@ class User < ApplicationRecord
   def create_from_facebook
     User.create(name)
   end
-   
-  has_and_belongs_to_many :friendships,
-    class_name: "User",
-    join_table:  :friendships,
-    foreign_key: :user_id,
-    association_foreign_key: :friend_user_id
 
 end
