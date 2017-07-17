@@ -3,6 +3,7 @@
 <p>
   <strong>Address:</strong>
   <%= @bookmark.address %>
+  <p><%= render @post.tags %></p>
 </p>
 
 <%= link_to 'Edit', edit_bookmark_path(@bookmark) %> |
