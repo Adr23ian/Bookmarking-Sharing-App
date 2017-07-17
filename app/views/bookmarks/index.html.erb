@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Address</th>
-      <th colspan="6"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -14,13 +14,9 @@
     <% @bookmarks.each do |bookmark| %>
       <tr>
           <td><%= link_to bookmark.address, bookmark.address %></td>
-          <td> <%= render post.tags %></td>
           <td><%= link_to 'Show', bookmark %></td>
           <td><%= link_to 'Edit', edit_bookmark_path(bookmark) %></td>
           <td><%= link_to 'Delete', bookmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <td><%= link_to 'Tag', add_tag %></td>
-        </ul>
-
       </tr>
     <% end %>
   </tbody>

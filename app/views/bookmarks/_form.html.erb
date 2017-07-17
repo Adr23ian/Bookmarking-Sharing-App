@@ -14,9 +14,11 @@
   <div class="field">
     <%= form.label :address %>
     <%= form.text_field :address, id: :bookmark_address %>
-    <%= f.text_field :tag_list, value: f.object.tag_list.to_s %>
   </div>
-
+  <div class="field">
+    <%= form.label :tag_list, "Tags (separated by commas)" %>
+    <%= form.text_field :tag_list %>
+  </div>
   <div class="actions">
     <%= form.submit %>
   </div>

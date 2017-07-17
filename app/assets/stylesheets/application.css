@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css?family=Antic|Raleway:400,800');
+.col-lg-9 {
+  background-image: url('public/ben-white-131958.jpg');
+}

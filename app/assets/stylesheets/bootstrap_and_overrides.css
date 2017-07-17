@@ -4,3 +4,34 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
 */
+.navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background-color: #A9A9A9;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #a1dbe8;
+}
+
+.userheader {
+  font-family: 'Antic', sans-serif;
+}
+li.userlist a {
+  font-family: 'Raleway', sans-serif;
+}
+li {
+  list-style: none;  
+}
+
+li.userlist a:hover {
+  color: #FF3B3F;
+  background-color: white;
+  text-decoration: none;
+}
+ul.nav.navbar-nav li a {
+  font-family: 'Antic', sans-serif;
+}
+
+a.navbar-brand {
+  font-family: 'Antic', sans-serif;
+  font-weight: 800;
+}
