@@ -4,7 +4,7 @@ class User < ApplicationRecord
       join_table:  :friendships,
       foreign_key: :user_id,
       association_foreign_key: :friend_user_id
-  has_many :bookmarks
+  has_and_belongs_to_many :bookmarks
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :omniauthable, :omniauth_providers => [:facebook]

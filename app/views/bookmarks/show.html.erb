@@ -3,7 +3,14 @@
 <p>
   <strong>Address:</strong>
   <%= @bookmark.address %>
-  <p><%= render @bookmark.tags %></p>
+  <h4>Tags:</h4>
+  <ul>
+  <% @bookmark.tags.each do |tag| %>
+    <li><%= tag.name %></li>
+  <% end %>
+</ul>
+
+
 </p>
 
 <%= link_to 'Edit', edit_bookmark_path(@bookmark) %> |

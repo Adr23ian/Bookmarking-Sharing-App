@@ -1,4 +1,4 @@
 class Bookmark < ApplicationRecord
-  belongs_to :user
+  has_and_belongs_to_many :users
     acts_as_taggable
 end
