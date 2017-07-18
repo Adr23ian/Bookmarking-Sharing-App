@@ -12,11 +12,11 @@
     </tr>
   </thead>
   <tbody>
-    <% @users.each do |user| %>
+    <% @users.each_with_index do |user| %>
       <tr>
         <td><%= link_to user.id, user_path(user) %></td>
         <td><%= user.name %></td>
-        <td><%=l user.created_at %></td>
+        <td><%= user.created_at %></td>
         <td>
           <%= link_to t('.show', :default => t("helpers.links.show")),
                       user_path(user), :class => 'btn btn-default btn-xs' %>

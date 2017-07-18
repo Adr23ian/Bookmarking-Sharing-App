@@ -1,3 +1,35 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@media screen and (max-width: 412px) {
+  li.userlist {
+    margin-left: -30%;
+    margin-bottom: 3%;
+  }
+}
+
+.init_block {
+  margin: auto;
+  width: 70%;
+}
+.btn-lg, .btn-group-lg>.btn {
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+a:visited {
+  color: black;
+}
+
+.pics {
+  width: 100px;
+  height: 100px;
+  padding: 1%;
+
+  border-radius: 30%;
+}
+
+probox {
+  text-align: center;
+}

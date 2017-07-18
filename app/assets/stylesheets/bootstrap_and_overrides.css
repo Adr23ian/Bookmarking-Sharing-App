@@ -4,6 +4,25 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
 */
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: -9px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: -42px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transpar;
+    border-radius: 5px;
+}
+.navbar-brand {
+    float: left;
+    padding: 15px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+}
 .navbar-default .navbar-form {
     border-color: #e7e7e7;
     background-color: #A9A9A9;
@@ -19,7 +38,7 @@ li.userlist a {
   font-family: 'Raleway', sans-serif;
 }
 li {
-  list-style: none;  
+  list-style: none;
 }
 
 li.userlist a:hover {

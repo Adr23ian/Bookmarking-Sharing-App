@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :index]
   get 'tags/:tag', to: 'bookmarks#index', as: :tag
 
+  
+
   get "home", to: 'welcome#index'
   devise_for :users, controllers: { sessions: 'users/sessions', omniauth_callbacks: 'users/omniauth_callbacks'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -21,5 +23,5 @@ Rails.application.routes.draw do
       root 'users/sessions#new', as: "/"
     end
   end
-
+  get 'add_friend/:id', to: "users#add_friend"
 end
