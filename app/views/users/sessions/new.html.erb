@@ -5,28 +5,11 @@
     <title>BookMarkShare</title>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>
-    window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '319013541843826',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=319013541843826";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
     <h1>Welcome to Bookmarks Share!</h1>
     <h3>All your favorite tranding links sorted by tags &amp; popularity!</h3>
     <p>Share all your favorite pages with all your friends</p>
     <p>Or just explore what everyone else is browsing</p>
-    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+
 <!-- <h2>Log in</h2>
 <%= form_for(resource, as: resource_name, url: '/users/sign_in') do |f| %>
   <div class="field">
@@ -47,6 +30,6 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %> -->
-<%#= render "users/shared/links" %>
+<%= render "users/shared/links" %>
   </body>
 </html>
