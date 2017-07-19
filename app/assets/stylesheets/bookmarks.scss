@@ -14,12 +14,17 @@
 }
 li.userlist a {
   font-family: 'Raleway', sans-serif;
+  margin-right: 1%;
 }
 li {
   list-style: none;
 }
 
-li.userlist a:hover {
+#add-friend {
+  display: inline-block;
+}
+
+li.userlist input[type="submit"]:hover {
   color: #FF3B3F;
   background-color: white;
   text-decoration: none;
@@ -31,4 +36,10 @@ ul.nav.navbar-nav li a {
 a.navbar-brand {
   font-family: 'Antic', sans-serif;
   font-weight: 800;
+}
+
+@media screen and (max-width: 412px) {
+  li.userlist a {
+    padding: 15%;
+  }
 }

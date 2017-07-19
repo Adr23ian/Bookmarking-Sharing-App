@@ -1,2 +1,92 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="row">
+  <div class="col-md-8">
+
+    <h1>Welcome <%= current_user.name %>!</h1>
+
+      <% if current_user.id == 17 %>
+          <div class="profilepic"><%=image_tag("p11.jpg") %></div>
+          <% else %>
+          <div class="profilepic"><%=image_tag("p10.jpg") %></div>
+          <% end %>
+
+    <h3>Below are a collection of websites you've <span class="hightlight">currated</span>.</h3>
+    <h4>Music Tags:</h4>
+    <ul>
+
+      <li><img class="site_logo" class="site_logo"
+        src="http://st.ulximg.com/static/images/logo-hnhh.svg?1500393793_p"
+        alt="website logo"><a class="profile_links" class="profile_links" href="http://www.hotnewhiphop.com">Hot New HipHop</a></li>
+
+      <li><img class="site_logo" src="http://www.thefader.com/assets/footer_logo2-49a214cb2c30448c6f4be7aa56b2c762.png" alt=""><a class="profile_links" class="profile_links" href="http://www.thefader.com">Fader</a></li>
+
+      <li><img class="site_logo" src="https://s3.amazonaws.com/factmag-images/wp-content/uploads/2016/09/logo-con-1a.png" alt=""><a class="profile_links" class="profile_links" href="http://www.factmag.com">Fact</a></li>
+
+      <li><img class="site_logo" src="http://www.mixmag.net/assets/uploads/images/logo.png" alt=""><a class="profile_links" class="profile_links" href="http://www.mixmag.net">Mix Mag</a></li>
+
+      <li><img class="site_logo" src="http://rapradar.com/wp-content/themes/rapradar-desktop/images/logo_rapradar_header.png" alt=""><a class="profile_links" class="profile_links" href="http://www.rapradar.com">Rap Radar</a></li>
+
+      <li><img class="site_logo" src="http://earmilk.com/logo.png" alt=""><a class="profile_links" class="profile_links" href="http://www.earmilk.com">EarMilk</a></li>
+
+      <li><img class="site_logo" src="http://11234-presscdn-0-32.pagely.netdna-cdn.com/wp-content/uploads/2017/01/djtechtools-trans-applenews-full.png" alt=""><a class="profile_links" class="profile_links" href="http://www.djtechtools.com">Dj Tech Tools</a></li>
+
+      <li><img class="site_logo" src="http://www.generationbass.com/wp-content/uploads/2017/04/skull.png" alt=""><a class="profile_links" href="http://www.generationbass.com">Generation Bass</a></li>
+
+      <li><img class="site_logo" src="https://www.xlr8r.com/wp-content/uploads/2016/08/border_logo_100h.png" alt=""><a class="profile_links" href="http://www.xlr8r.com">XLR8R</a></li>
+
+      <li><img class="site_logo" src="https://www.residentadvisor.net/images/ra-logo-b.png" alt=""><a class="profile_links" href="http://www.residentadvisor.com">Resident Advisor</a></li>
+
+      <li><img class="site_logo" src="http://www.musicradar.com/media/img/futureMusicLogo.svg" alt=""><a class="profile_links" href="http://www.futuremusic.co.uk"> Future Music UK</a></li>
+    </ul>
+    <h4>Programming / Technology Tags:</h4>
+    <ul>
+
+      <li><img class="site_logo" src="http://thesassway.com/images/thesassway.svg" alt=""><a class="profile_links" href="http://thesassway.com/">The Sass Way</a></li>
+
+      <li><img class="site_logo" src="https://upload.wikimedia.org/wikipedia/en/6/69/Gizmodo_Media_Group_Logo.png" alt=""><a class="profile_links" href="http://gizmodo.com/tag/programming">Gizmodo - Programming</a></li>
+
+      <li><img class="site_logo" src="http://logonoid.com/images/engadget-logo.png" alt=""><a class="profile_links" href="https://www.engadget.com/tag/programming/">Engadget - Programming</a></li>
+
+      <li><img class="site_logo" src="http://i2.cdn.turner.com/money/dam/assets/160924173302-the-verge-logo-780x439.jpg" alt=""><a class="profile_links" href="https://www.theverge.com/"> The Verge</a></li>
+
+      <li><img class="site_logo" src="http://weblog.rubyonrails.org/images/rails-logo.svg" alt=""><a class="profile_links" href="http://weblog.rubyonrails.org/news/">Rails News</a></li>
+
+      <li><img class="site_logo" src="https://www.wired.com/images/icons/logo-black.svg" alt=""><a class="profile_links" href="https://www.wired.com/tag/css/">Wired - CSS</a></li>
+
+      <li><img class="site_logo" src="http://css-weekly.com/wp-content/themes/cssweekly/img/cssweekly-logo.png" alt=""><a class="profile_links" href="http://css-weekly.com/">CSS Weekly</a></li>
+
+      <li><img class="site_logo" src="http://www.echojs.com/favicon.ico" alt=""><a class="profile_links" href="http://www.echojs.com/">Echo JavaScript</a></li>
+
+      <li><img class="site_logo" src="https://camo.githubusercontent.com/eb464a60a4a47f8b600aa71bfbc6aff3fe5c5392/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67" alt=""><a class="profile_links" href="http://jsfeeds.com/"></a>Javascript Feeds</li>
+
+      <li><img class="site_logo" src="https://dxj7eshgz03ln.cloudfront.net/production/publication/logo/3/77259447-e8e6-4430-8663-f75cb48b976f.png" alt=""><a class="profile_links" href="http://frontenddevweekly.com/">Front-end Weekly</a></li>
+
+      <li><img class="site_logo" src="http://www.fullstacktraining.com/images/FST_logo_opt.png" alt=""><a class="profile_links" href="http://www.fullstacktraining.com/articles">Full Stack Training - Articles</a></li>
+    </ul>
+    </div>
+
+  <div class="friend_box" class="col-md-4">
+    <h1 id="friends_title">Friends</h1>
+  </div>
+  <div class="row">
+    <ul>
+      <div class="col-md-1">
+        <li><img class="firendspic" src="https://www.engineering.cornell.edu/engineering/customcf/iws_ai_faculty_display/ai_images/caa238-profile.jpg" alt="friend1"><a href="#">Michael</a></li>
+        <li><img class="firendspic" src="https://s-media-cache-ak0.pinimg.com/736x/20/3d/59/203d59ade6a9d134cbe8ec8d045034ff--beauty-photography-white-photography.jpg" alt="friend1"><a href="#">George</a></li>
+        <li><img class="firendspic" src="http://1.bp.blogspot.com/-DKzHkOGWzRI/VPdpSpkaApI/AAAAAAAAAP8/thGcMVC6qGI/s1600/Jason%2BDavis%2Bheadshot.jpg" alt="friend1"><a href="#">Bill</a></li>
+        <li><img class="firendspic" src="https://www.elitesingles.co.uk/sites/www.elitesingles.co.uk/files/styles/elite_rectangle_article_arrow_left_frame/public/2b_en_articleslide_sm5.jpg" alt="friend1"><a href="#">Craig</a></li>
+        <li><img class="firendspic" src="https://blog.linkedin.com/content/dam/blog/en-us/corporate/blog/2014/07/Anais_Saint-Jude_L4388_SQ.jpg.jpeg" alt="friend1"><a href="#">Nancy</a></li>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-1">
+        <li><img class="firendspic" src="https://organicthemes.com/demo/profile/files/2012/12/profile_img.png" alt="friend1"><a href="#">Bart</a></li>
+        <li><img class="firendspic" src="https://s-media-cache-ak0.pinimg.com/736x/a2/e1/8c/a2e18cbfbcaa8756fe5b40f472eeff45--profile-picture-profile-pics.jpg" alt="friend1"><a href="#">Ashley</a></li>
+        <li><img class="firendspic" src="http://www.eharmony.com/blog/wp-content/uploads/2010/04/eHarmony-Blog-profile-picture.jpg" alt="friend1"><a href="#">Daivd</a></li>
+        <li><img class="firendspic" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/NafSadh_Profile.jpg/768px-NafSadh_Profile.jpg" alt="friend1"><a href="#">Carl</a></li>
+        <li><img class="firendspic" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Kruse_CNDLS_Profile.png" alt="friend1"><a href="#">Jessica</a></li>
+      </div>
+    </ul>
+  </div>
+</div>
+
+</html>

@@ -28,5 +28,5 @@ Rails.application.routes.draw do
       root 'users/sessions#new', as: "/"
     end
   end
-  get 'add_friend/:id', to: "users#add_friend"
+  post 'add-amigo', to: "users#add_amigo"
 end

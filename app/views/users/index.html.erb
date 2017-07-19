@@ -6,7 +6,16 @@
 <ul>
   <% @users.each_with_index do |user, idx|%>
      <div class="probox">
-<li class="userlist"><%= image_tag("p#{idx + 1}.jpg", class:"pics") %> <%=  link_to user.name, user  %> </li>
+    <li class="userlist"><%= image_tag("p#{idx + 1}.jpg", class:"pics") %>
+      <%=  link_to user.name, user  %>
+      <%= form_with(url:'add-amigo', id:"add-friend") do |f| %>
+        <input type="hidden" value="<%= user.id %>" name="friend_id">
+        <input type="hidden" value="<%=current_user.id %>" name="id">
+        <%#= link_to "Add Friend", add_friend_path(user.id), class: "btn btn-sm btn-default" %>
+        <input type="submit" class="btn btn-sm btn-default" value="Add Friend">
+      <% end %>
+    </li>
+
      </div>
   <% end %>
 </ul>

@@ -17,19 +17,50 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
+a:hover {
+  background-color: white;
+  color: #FF3B3F;
+  text-decoration: none;
+}
+a:hover:visited {
+  color: #FF3B3F;
+}
 
-a:visited {
-  color: black;
+a:visted {
+    color: black;
 }
 
 .pics {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   padding: 1%;
 
   border-radius: 30%;
 }
 
-probox {
-  text-align: center;
+div.profilepic img {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 35%;
+}
+.highlighted span {
+  font-family: 'Raleway';
+}
+
+img.site_logo {
+  margin-right: 1%;
+  width: 50px;
+  height: auto;
+  margin: 1% 0;
+  background-size: cover;
+}
+.profile_links {
+  margin-left: 10px;
+}
+div.col-md-1 li a {
+  padding: 5px;
+  width: auto;
 }

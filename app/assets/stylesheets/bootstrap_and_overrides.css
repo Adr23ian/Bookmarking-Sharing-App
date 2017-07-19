@@ -4,6 +4,7 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
 */
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -53,4 +54,25 @@ ul.nav.navbar-nav li a {
 a.navbar-brand {
   font-family: 'Antic', sans-serif;
   font-weight: 800;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 10%;
+}
+h1#friends_title {
+  float: none;
+  text-align: -webkit-right;
+}
+
+div.friend_box.col-md-4 {
+  margin-top: 20%;
+}
+
+li {
+margin-bottom: 20px;
+font-size: 16px;
 }
