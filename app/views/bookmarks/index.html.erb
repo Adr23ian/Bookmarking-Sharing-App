@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Address</th>
-      <th colspan="4"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -14,9 +14,10 @@
     <% @bookmarks.each do |bookmark| %>
       <tr>
           <td><%= link_to bookmark.address, bookmark.address %></td>
+          <td><%= link_to("\xE2\x9D\xA4", save_for_later_bookmark_path(bookmark)) %></td>
           <td><%= link_to 'Show', bookmark %></td>
-          <td><%= link_to 'Edit', edit_bookmark_path(bookmark) %></td>
-          <td><%= link_to 'Delete', bookmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to('Edit', edit_bookmark_path(bookmark)) if user_signed_in? %></td>
+          <td><%= link_to('Delete', bookmark, method: :delete, data: { confirm: 'Are you sure?' }) if user_signed_in? %></td>
       </tr>
     <% end %>
   </tbody>

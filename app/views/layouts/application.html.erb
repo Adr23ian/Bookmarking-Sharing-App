@@ -38,7 +38,7 @@
              </li>
             <% else %>
               <li>
-              <%= link_to('Login', users_sign_in_path)  %>
+              <%= link_to('Login', omniauth_authorize_path(resource_name, provider))  %>
              </li>
             <% end %>
           </ul>
@@ -69,6 +69,5 @@
         <p>&copy; Bookmark Sharing App - Christopher Hernandez and Adrian Martinez  2017</p>
       </footer>
     </div> <!-- /container -->
-    <%= console %>
   </body>
 </html>
