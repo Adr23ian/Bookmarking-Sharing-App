@@ -29,14 +29,14 @@ class User < ApplicationRecord
     User.create(name)
   end
   def add_friend(friend)
-     if current_user.friendships.include? friend
-       flash[:notice] = "User is Already in your Friends List"
-       redirect_to(:back)
-     else
-       current_user.friendships << friend_being_added
-       redirect_to(:back)
-     end
-   end
+    if self.friendships.include? friend
+      msg = "User is Already in your Friends List"
+    else
+      self.friendships << friend
+      msg = "Your friend was added to the list! :)"
+    end
+    msg
+  end
 
   def remove_friend
   end
