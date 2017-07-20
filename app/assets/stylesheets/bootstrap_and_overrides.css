@@ -2,8 +2,11 @@
   =require twitter-bootstrap-static/bootstrap
 
   Static version of css will use Glyphicons sprites by default
+  */
   =require twitter-bootstrap-static/sprites
-*/
+
+  @import "twitter/bootstrap/glyphicons.less";
+
 
 .navbar-toggle {
     position: relative;
@@ -75,4 +78,7 @@ div.friend_box.col-md-4 {
 li {
 margin-bottom: 20px;
 font-size: 16px;
+}
+.panel-body i {
+  margin-left: 10%;
 }

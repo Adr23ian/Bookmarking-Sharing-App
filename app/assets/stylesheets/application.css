@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Antic|Raleway:400,800');
 .col-md-1 {
   float: right
